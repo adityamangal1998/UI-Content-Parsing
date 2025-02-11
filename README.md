@@ -2,6 +2,9 @@
 
 This project is a Flask application that allows users to scrape content from URLs, store it in a vector database, and interact with the content through a chatbox. The application uses ChromaDB for storing and querying the content, and the Bedrock API for generating answers based on the scraped content.
 
+## Hosted on
+http://3.137.50.42:5000/
+
 ## Features
 
 - Scrape content from one or more URLs
@@ -24,7 +27,7 @@ This project is a Flask application that allows users to scrape content from URL
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/UI-Content-Parsing.git
+    git clone https://github.com/adityamangal1998/UI-Content-Parsing.git
     cd UI-Content-Parsing
     ```
 
@@ -96,8 +99,3 @@ This project is a Flask application that allows users to scrape content from URL
 - `templates/`: Directory for HTML templates
 - `utils.py`: Utility functions for scraping content from URLs
 - `vectordb.py`: Functions for storing and querying content in ChromaDB
-
-## License
-
-This project is licensed under the MIT License.
-```
