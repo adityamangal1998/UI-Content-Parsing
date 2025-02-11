@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Parsing and Q&A</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Content Parsing and Q&A</h1>
+        <form id="scrape-form">
+            <h2>Enter URLs to Scrape</h2>
+            <div id="url-inputs">
+                <input type="text" name="urls" placeholder="Enter URL">
+            </div>
+            <button type="button" onclick="addUrlInput()">Add another URL</button>
+            <button type="submit">Scrape Content</button>
+        </form>
+        <div id="scrape-result"></div>
+        <div id="chatbox">
+            <h2>Ask a Question</h2>
+            <input type="text" id="question" placeholder="Enter your question">
+            <button onclick="askQuestion()">Get Answer</button>
+            <div id="answer"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
